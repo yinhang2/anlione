@@ -9,5 +9,6 @@
 * [案例七](an-li-qi.md)
 * [案例八](an-li-ba.md)
 * [案例九](an-li-jiu.md)
+* [案例十](an-li-shi.md)
 * [案例十一](an-li-shi-yi.md)
 
