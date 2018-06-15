@@ -32,16 +32,16 @@
 在什么时候结束迭代过程？这是编写迭代程序必须考虑的问题。不能让迭代过程无休止地执行下去。迭代过程的控制通常可分为两种情况：一种是所需的迭代次数是个确定的值，可以计算出来；另一种是所需的迭代次数无法确定。对于前一种情况，可以构建一个固定次数的循环来实现对迭代过程的控制；对于后一种情况，需要进一步分析得出可用来结束迭代过程的条件。
 
 ##案例实现
- Java开平方根代码——————牛顿迭代法
- package project.test;
+ Java开平方根代码——————牛顿迭代法  
+ package project.test;  
 
 
-import java.math.*;
+import java.math.*;  
 
 
-public class SqrtTest {
-private static final String num = "10";
-private static final int accuracy = 5;
+public class SqrtTest {  
+private static final String num = "10";  
+private static final int accuracy = 5;  
 private static double accuracyDouble = 0.1;
 
 
