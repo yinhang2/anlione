@@ -33,11 +33,11 @@
 
 ##案例实现
  Java开平方根代码——————牛顿迭代法
- package project.test;
+ package project.test;\n
 
 
 
-import java.math.*;
+import java.math.*;\n
 
 
 public class SqrtTest {
