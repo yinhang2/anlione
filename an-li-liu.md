@@ -53,28 +53,48 @@ calSqrt();
 }
 
 private static void calSqrt() {
+
 BigDecimal guessNum = new BigDecimal(1);
+
 for (int i = 0; i < accuracy; i++) {
+
 accuracyDouble *= 0.1;
+
 }
+
 while (true) {
+
 BigDecimal temp = SqrtTest.newtonMethod(guessNum);
+
 if (temp.equals(guessNum)) {
+
 break;
+
 }
+
 double d = guessNum.subtract(temp).doubleValue();
+
 if (d > 0 && d < accuracyDouble) {
+
 guessNum = temp;
+
 break;
+
 }
+
 guessNum = temp;
+
 }
+
 System.out.println("Result is " + guessNum);
+
 }
 
 
 private static BigDecimal newtonMethod(BigDecimal guessNum) {
+
 return guessNum.subtract((guessNum.multiply(guessNum).subtract(new BigDecimal(num))).divide(new BigDecimal(2).multiply(guessNum), accuracy, BigDecimal.ROUND_HALF_EVEN));
+
 }
 
 
